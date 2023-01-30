@@ -9,8 +9,5 @@ fi
 echo "//npm.pkg.github.com/:_authToken=$INPUT_AUTH_TOKEN" >> .npmrc
 
 if [[ "$INPUT_ENV" == "clouz" ]]; then
-    echo "here" 
-    echo "$(ls)"
-    echo "$(PWD)"
     mv .npmrc ./microservices/
 fi
