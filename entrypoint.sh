@@ -13,5 +13,4 @@ if [[ "$INPUT_ENV" == "clouz" ]]; then
     echo "$(ls)"
     echo "$(PWD)"
     mv .npmrc ./microservices/
-    echo "$(ls microservices)" >> $GITHUB_OUTPUT
 fi
