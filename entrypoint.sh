@@ -8,7 +8,7 @@ fi
 
 echo "//npm.pkg.github.com/:_authToken=$INPUT_AUTH_TOKEN" >> .npmrc
 
-if [[ -z "$INPUT_ENV" = "clouz" ]]; then
+if [[ -z "$INPUT_ENV" ]] && [[ "$INPUT_ENV" = "clouz" ]]; then
     mv .npmrc ./microservices/
     ls microservices
 fi
