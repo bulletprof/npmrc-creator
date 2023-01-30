@@ -10,6 +10,9 @@ inputs:
   auth_token:
     description: 'Auth token for Github'
     required: true
+  env:
+    description: 'Set clouz for clouz usage'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
